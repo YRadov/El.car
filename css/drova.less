@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  background-color: #1b6d85;
+  position: relative
+}
+
+.btn-default {
+  width: 100%
+}
+
+.cliarfix:before, .cliarfix:after {
+  content: " ";
+  display: table
+}
+
+.cliarfix:after {
+  clear: both
+}
+
+h1 {
+  text-align: center
+}
+
+td{
+  vertical-align: middle !important;
+}
+//-----------------------------------------------------
+#all-lag {
+  font-size: 20px
+}
+
+#btn-text-enter {
+  color: #f00;
+  position: absolute;
+  left: 40%;
+  top: 0;
+  font-weight: bold
+}
+
+.choose-len {
+  font-size: 25px;
+  padding: 0 20px
+}
+
+.choose-len h3 {
+  margin-top: 0
+}
+
+.choose-len button {
+  border-radius: 5px;
+  width: 80px
+}
+
+.choose-len-wrap {
+  text-align: center
+}
+
+.choose-len-wrap i {
+  color: #f00;
+  opacity: 0
+}
+
+#delete {
+  color: #f00
+}
+
+#delete:hover {
+  cursor: pointer
+}
+
+#enter-diam {
+  background-color: transparent;
+  border: none
+}
+
+.error {
+  background-color: #fff;
+  border: 3px solid #f00;
+  color: #f00;
+  display: none;
+  font-size: 20px;
+  width: 300px;
+  position: fixed;
+  text-align: center;
+  top: 20px;
+  z-index: 999
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  //margin: 30px -10px -10px -10px;
+  padding: 10px;
+  position: relative;
+  .fa-calculator{
+    right: 130px;
+  }
+}
+
+footer a {
+  color: #fff
+}
+
+//footer a:hover {
+//  color: #f00
+//}
+
+footer i {
+  color: #fff;
+  position: absolute;
+  right: 20px
+}
+
+//footer i:hover {
+//  color: #f00;
+//  cursor: pointer
+//}
+
+h3 {
+  margin: 0;
+  text-align: center
+}
+
+.handlers
+{
+  padding: 20px !important;
+}
+
+hr {
+  margin: 10px auto
+}
+
+label {
+  margin-right: 20px
+}
+
+.left {
+  float: left
+}
+
+.max-val, .max-val-rest {
+  text-align: center
+}
+
+.max-val {
+  font-size: 16px
+}
+
+.next-cont {
+  margin-top: 20px;
+  text-align: center;
+  position: relative
+}
+
+.num {
+  font-weight: bold;
+  font-size: 20px
+}
+//=================================
+//======ОФОРМЛЕНИЕ ЯЧЕЕК===========
+//=================================
+
+.param {
+  display: inline-block;
+  font-size: 20px;
+  height: 25px;
+  width: 80px;
+  padding: 0;
+  text-align: center;
+}
+#diam_total{
+  width: 50px;
+}
+#val_total{
+  width: 75px;
+}
+#aver_diam{
+  width: 60px;
+}
+//поля сумм
+.total{
+  font-size: 18px;
+  height: 25px;
+  width: 65px;
+}
+//все поля кол-ва
+.diam{
+
+}
+//все поля объема
+.val{
+
+}
+//=================================
+//=================================
+//=================================
+.right {
+  float: right
+}
+
+.submit {
+  text-align: center
+}
+
+.submit button {
+  font-size: 20px
+}
+
+.table {
+  text-align: center
+}
+
+.table th {
+  text-align: center
+}
+
+.table-button {
+  background-color: #28b4cc
+}
+
+.tab-header {
+  background-color: #ccc !important
+}
+
+.total-diam-data
+{
+  border: 2px solid red;
+  //width: 200px;
+  margin: auto;
+}
+
+.total-val {
+  text-align: center
+}
+
+.total-val #total_val {
+  background-color: #008000;
+  color: #fff
+}
+
+.total-val input {
+  width: 100%;
+  text-align: center
+}
+
+.total-val-top {
+  display: inline-block;
+  margin: 5px auto;
+  width: 140px
+}
+
+.total-val-top #total_val_top {
+  color: #fff;
+  background-color: #008000;
+  font-size: 16px;
+  padding: 0;
+  height: 20px
+}
+
+#val {
+  width: 110px
+}
+
+.well-done {
+  background-color: #fff;
+  border: 3px solid #008000;
+  color: #008000;
+  display: none;
+  font-size: 20px;
+  position: fixed
+}
+
+.wrapper {
+  background-color: #28b4cc;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 40px 10px 10px 10px;
+  position: relative;
+}
+
+#numbers
+{
+  //display: none;
+}
+.numbers {
+  background-color: #fff;
+  position: fixed;
+  bottom: -15px;
+}
+
+.numbers .del, .exit {
+  color: #f00
+}
+
+.numbers .del:hover {
+  color: #f00
+}
+
+.prev, .next {
+  color: #008000
+}
+
+.next:hover {
+  color: #008000
+}
+.prev:hover{
+  color: #008000
+}
+
+.numbers td {
+  font-size: 25px;
+  padding: 3px !important;
+}
+
+.numbers td:hover {
+  background-color: #999;
+  color: #fff;
+  cursor: pointer
+}
+
+.show-sos {
+  text-align: center
+}
+
+.sos-wrapper {
+  display: none;
+  position: relative
+}
+
+.sos-wrapper .sos {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 300px
+}
+
+.show-melcodrev {
+  margin-top: 20px;
+  text-align: center
+}
+
+.melcodrev {
+  background-color: #fff;
+  padding-bottom: 115px;
+}
+
+.melcodrev-total
+{
+  background-color: #28b4cc;
+  border-top: 1px solid red;
+  border-bottom: 4px solid red;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*
+.melcodrev-total input
+{
+    height: 20px;
+}
+*/
+
+.melcodrev-total table
+{
+  margin: 0 auto;
+}
+
+.melcodrev .close-melcodrev {
+  background-color: #f00;
+  vertical-align: middle
+}
+
+.melcodrev .close-melcodrev .btn {
+  border: 5px solid #ccc;
+  color: #f00;
+  font-weight: bold
+}
+
+.melcodrev select {
+  font-size: 20px
+}
+
+.melcodrev select option {
+  text-align: center
+}
+
+.melcodrev td {
+  font-size: 20px
+}
+
+.sinhro {
+  margin-top: 20px;
+  text-align: center
+}
+
+.container-data {
+  text-align: center
+}
+
+.container-data #show_cont {
+  margin-bottom: 10px
+}
+
+.container-data .table-container-data {
+  background-color: #fff;
+  padding: 10px 0 20px;
+  text-align: center;
+  display: none;
+  .form-control{
+    height: 25px;
+    padding: 0;
+    text-align: center;
+  }
+  select{
+    font-size: 14px;
+    text-align: center;
+  }
+  td {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.container-one-admin {
+  width: 50%
+}
+
+.total-container
+{
+  background-color: #28b4cc;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#row_up {
+  position: fixed;
+  bottom: 20px;
+  left: 20px
+}
+
+#row_up i {
+  color: #f00
+}
+
+.total-data
+{
+  margin: 0;
+}
+
+.val_preview
+{
+  border: 1px solid red;
+}
+.val_preview_tip
+{
+  font-size: 16px;
+}
+//******************************************
+// ВВОД ДИАМЕТРОВ ANGULAR
+.add-logs
+{
+  width: 30px;
+  font-size: 16px;
+}
+
+.keyboard
+{
+  display: none;
+  margin: 10px 0;
+  position: relative;
+
+  div,
+  input{
+    padding: 0;
+    text-align: center;
+  }
+
+  .add-logs-diams{
+    //margin-top: 15px;
+    position: absolute;
+    left: -33px;
+    top: 40px;
+    width: 320px;
+  }
+
+  .fa-minus-square,
+  .fa-plus-square,
+  .fa-arrow-left{
+    color: red;
+  }
+
+  .fa-check-square-o {
+    color: green;
+  }
+}//.keyboard
+
+.keyboard:hover{
+  cursor: pointer;
+}
+.table-inverse {
+  color: #eceeef;
+  background-color: #373a3c !important;
+}
+
+.new-car
+{
+  display: none;
+  input{
+    margin: 5px 0;
+    width: inherit;
+  }
+}//new-car
+
+.show-cars-loadings{
+  margin-top: 10px;
+}
+
+#qty_by_diams
+{
+  margin-top: 200px;
+}

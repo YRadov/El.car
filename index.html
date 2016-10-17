@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html ng-app="lesModule">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EL.4.Odd-diam</title>
+    <!-- [favicon] begin -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/el.jpg" />
+    <link rel="icon" type="image/x-icon" href="img/el.jpg" />
+    <!-- [favicon] end -->
+
+
+    <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/drova.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-controller="LesCtrl">
+
+  <div class="container-fluid">
+      <div class="row">
+        <div class="wrapper" id="wrapper">
+            <div class="error"></div>
+
+            <!--НАЧАЛО МЕЛКОДРЕВА-->
+            <div class="melcodrev">
+                <table class="table table-responsive table-bordered table-diam">
+
+                    <tr  class="md">
+                        <td>
+                            <h4>ДЛИНА</h4>
+                            <select class="form-control" id="Lmd">
+                                <option value="LM_3_8">3,8 м</option>
+                                <option value="L_5_8">5,8 м</option>
+                            </select>
+                        </td>
+                        <td class="close-melcodrev">
+                            <button  class="btn btn-default reset-melcodrev" ng-click="cleanDiamQty();">
+                                СБРОС
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            6 - <input type="text" diam="6" class="form-control param diam" id="diam6"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val6" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            7 - <input type="text" diam="7" class="form-control param diam" id="diam7"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val7" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            8 - <input type="text" diam="8" class="form-control param diam" id="diam8"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val8" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            9 - <input type="text" diam="9" class="form-control param diam" id="diam9"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val9" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            10 - <input type="text" diam="10" class="form-control param diam" id="diam10"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val10" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            11 - <input type="text" diam="11" class="form-control param diam" id="diam11"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val11" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            12 - <input type="text" diam="12" class="form-control param diam" id="diam12"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val12" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            13 - <input type="text" diam="13" class="form-control param diam" id="diam13"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val13" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            14 - <input type="text" diam="14" class="form-control param diam" id="diam14"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val14" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            16 - <input type="text" diam="16" class="form-control param diam" id="diam16"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val16" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            18 - <input type="text" diam="18" class="form-control param diam" id="diam18"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val18" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            20 - <input type="text" diam="20" class="form-control param diam" id="diam20"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val20" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            22 - <input type="text" diam="22" class="form-control param diam" id="diam22"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val22" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            24 - <input type="text" diam="24" class="form-control param diam" id="diam24"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val24" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            26 - <input type="text" diam="26" class="form-control param diam" id="diam26"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val26" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            28 - <input type="text" diam="28" class="form-control param diam" id="diam28"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val28" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            30 - <input type="text" diam="30" class="form-control param diam" id="diam30"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val30" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            32 - <input type="text" diam="32" class="form-control param diam" id="diam32"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val32" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            34 - <input type="text" diam="34" class="form-control param diam" id="diam34"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val34" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            36 - <input type="text" diam="36" class="form-control param diam" id="diam36"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val36" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-ban"></i>
+                            38 - <input type="text" diam="38" class="form-control param diam" id="diam38"  readonly value="0">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control param val" id="val38" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <span class="val_preview_tip">Общий объем (предварительно)</span>
+                        </td>
+                        <td class="handlers">
+                            <input type="text" class="form-control param val_preview" id="val_preview" placeholder="объем"  readonly value="0">
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <span class="val_rest_tip">Осталось</span>
+                        </td>
+                        <td class="handlers">
+                            <input type="text" class="form-control param " id="rest_val" readonly>
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td>
+                            <span class="val_max_tip">Max. объем</span>
+                        </td>
+                        <td class="handlers">
+                            <input type="text" class="form-control param " id="max_val">
+                        </td>
+                    </tr>
+                    <!-- ********************************************************* -->
+                    <tr class="md">
+                        <td colspan="2" class="handlers">
+                            <button class="btn btn-primary edit-enter">
+                                Дополнительный ввод
+                            </button>
+
+                            <div class="keyboard container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        №{{next_log_num}}
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-ban"></i>&nbsp;<input type="text" class="add-logs" ng-model="diam" readonly>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <i class="fa fa-minus-square" ng-click="minusDiam()"></i>&nbsp;&nbsp;&nbsp;
+                                        <input type="text" class="add-logs" ng-model="qty" readonly>&nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-plus-square" ng-click="plusDiam()"></i>
+                                    </div>
+                                </div>
+                                <table class="table table-bordered table-inverse add-logs-diams">
+                                    <tr>
+                                        <td ng-click="addDiam(26)">26</td>
+                                        <td ng-click="addDiam(28)">28</td>
+                                        <td ng-click="addDiam(30)">30</td>
+                                        <td ng-click="addDiam(32)">32</td>
+                                        <td ng-click="removeDiam()"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td ng-click="addDiam(16)">16</td>
+                                        <td ng-click="addDiam(18)">18</td>
+                                        <td ng-click="addDiam(20)">20</td>
+                                        <td ng-click="addDiam(22)">22</td>
+                                        <td ng-click="addDiam(24)">24</td>
+                                    </tr>
+                                    <tr>
+                                        <td ng-click="addDiam(10)">10</td>
+                                        <td ng-click="addDiam(11)">11</td>
+                                        <td ng-click="addDiam(12)">12</td>
+                                        <td ng-click="addDiam(13)">13</td>
+                                        <td ng-click="addDiam(14)">14</td>
+                                    </tr>
+                                    <tr>
+                                        <td ng-click="addDiam(6)">6</td>
+                                        <td ng-click="addDiam(7)">7</td>
+                                        <td ng-click="addDiam(8)">8</td>
+                                        <td ng-click="addDiam(9)">9</td>
+                                        <td ng-click="addNext()"><i class="fa fa-check-square-o" aria-hidden="true"></i></i></td>
+                                    </tr>
+                                </table>
+                                <button id="qty_by_diams" class="btn btn-primary" ng-click="showQtyByDiam()">
+                                    Колличество бревен
+                                </button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <!--***********************************************************-->
+                    <tr class="md">
+                        <td colspan="2" class="handlers">
+                            <button  class="btn  btn-success save-data" ng-click="saveDataInAllLoading();">
+                                СОХРАНИТЬ ДАННЫЕ
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="md">
+                        <td colspan="2" class="handlers">
+                            <h4 style="border:3px solid red;">
+                                Текущая машина/вагон:
+                                <b>{{current_car.num}}</b>
+                            </h4>
+                            <button class="btn btn-success add-car">
+                                Новая машина/вагон
+                            </button>
+                            <div class="row new-car">
+                                <div class="col-xs-2">№</div>
+                                <div class="col-xs-10"><input type="text" ng-model="new_car_num"></div>
+                                <div class="col-xs-2">Дата</div>
+                                <div class="col-xs-10"><input type="text" ng-model="new_car_date"></div>
+                                <button id="add_new_car" class="btn btn-primary" ng-click="addNewCar()">
+                                    добавить
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="show-cars-loadings">
+                                <button id="all_cars" class="btn btn-primary" ng-click="showCarsLoadings()">
+                                    Показать загрузку по машинам
+                                </button>
+                                <div ng-repeat="car in CarsLoadings" ng-show="show_cars">
+                                    № {{car.num}} | {{car.date}}
+                                    <ul ng-style="{'list-style': 'none'}">
+                                        <li ng-show="car[6]"><i class="fa fa-ban" aria-hidden="true"></i> 6  - {{car[6]}}</li>
+                                        <li ng-show="car[7]"><i class="fa fa-ban" aria-hidden="true"></i> 7 - {{car[7]}}</li>
+                                        <li ng-show="car[8]"><i class="fa fa-ban" aria-hidden="true"></i> 8  - {{car[8]}}</li>
+                                        <li ng-show="car[9]"><i class="fa fa-ban" aria-hidden="true"></i> 9  - {{car[9]}}</li>
+                                        <li ng-show="car[10]"><i class="fa fa-ban" aria-hidden="true"></i> 10  - {{car[10]}}</li>
+                                        <li ng-show="car[11]"><i class="fa fa-ban" aria-hidden="true"></i> 11  - {{car[11]}}</li>
+                                        <li ng-show="car[12]"><i class="fa fa-ban" aria-hidden="true"></i> 12  - {{car[12]}}</li>
+                                        <li ng-show="car[13]"><i class="fa fa-ban" aria-hidden="true"></i> 13  - {{car[13]}}</li>
+                                        <li ng-show="car[14]"><i class="fa fa-ban" aria-hidden="true"></i> 14  - {{car[14]}}</li>
+                                        <li ng-show="car[16]"><i class="fa fa-ban" aria-hidden="true"></i> 16  - {{car[16]}}</li>
+                                        <li ng-show="car[18]"><i class="fa fa-ban" aria-hidden="true"></i> 18  - {{car[18]}}</li>
+                                        <li ng-show="car[20]"><i class="fa fa-ban" aria-hidden="true"></i> 20  - {{car[20]}}</li>
+                                        <li ng-show="car[22]"><i class="fa fa-ban" aria-hidden="true"></i> 22  - {{car[22]}}</li>
+                                        <li ng-show="car[24]"><i class="fa fa-ban" aria-hidden="true"></i> 24  - {{car[24]}}</li>
+                                        <li ng-show="car[26]"><i class="fa fa-ban" aria-hidden="true"></i> 26  - {{car[26]}}</li>
+                                        <li ng-show="car[28]"><i class="fa fa-ban" aria-hidden="true"></i> 28  - {{car[28]}}</li>
+                                        <li ng-show="car[30]"><i class="fa fa-ban" aria-hidden="true"></i> 30  - {{car[30]}}</li>
+                                        <li ng-show="car[32]"><i class="fa fa-ban" aria-hidden="true"></i> 32  - {{car[32]}}</li>
+                                        <li ng-show="car[34]"><i class="fa fa-ban" aria-hidden="true"></i> 34  - {{car[34]}}</li>
+                                        <li ng-show="car[36]"><i class="fa fa-ban" aria-hidden="true"></i> 36  - {{car[36]}}</li>
+                                        <li ng-show="car[38]"><i class="fa fa-ban" aria-hidden="true"></i> 38  - {{car[38]}}</li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- ********************************************************* -->
+                    <tr class="md">
+                        <td colspan="2" class="handlers">
+
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td colspan="2" class="handlers">
+                            <button  class="btn  btn-danger delete-store" ng-click="deleteStore();">
+                                ОЧИСТИТЬ ПАМЯТЬ
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="md">
+                        <td colspan="2" class="handlers">
+                            <button class="btn btn-danger total-reset">
+                                ПОЛНАЯ ОЧИСТКА ХРАНИЛИЩА
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="total-container">
+                    <h3>ВСЯ ЗАГРУЗКА</h3>
+                    <table class="table-responsive total-data">
+                        <tr>
+                            <td>
+                                шт
+                                <input type="text" class="form-control param total" id="diam_total_general" placeholder="0"  readonly value="0">
+                            </td>
+                            <td>
+                                v
+                                <input type="text" class="form-control param total" id="val_total_general" placeholder="0"  readonly value="0">
+                            </td>
+                            <td>
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                                <input type="text" class="form-control param total" id="aver_diam_general" placeholder="0"  readonly value="0">
+                            </td>
+                        </tr>
+                    </table>
+                </div> <!--.melcodrev-total-->
+
+            </div><!-- .table-responsive -->
+            <!--КОНЕЦ ФОРМЫ МЕЛКОДРЕВА-->
+            <footer>
+                2016&nbsp;&copy;&nbsp;<a href="http://radov.xyz/" target="_blank">radov.xyz</a>
+                <a href="#wrapper" class="to-top">
+                    <i class="fa fa-caret-up fa-3x" title="вверх"></i>
+                </a>
+            </footer>
+
+        </div><!--.wrapper-->
+
+      </div><!-- .row -->
+      
+
+  </div><!-- .container MAIN CONTENT-->
+
+  <!--ВСЕ ДАННЫЕ ПО КОНТЕЙНЕРУ-->
+  <div class="melcodrev-total">
+      <table class="table-responsive total-data">
+          <tr>
+              <td>
+                  шт
+                  <input type="text" class="form-control param total" id="diam_total" placeholder="0"  readonly value="0">
+              </td>
+              <td>
+                  v
+                  <input type="text" class="form-control param total" id="val_total" placeholder="0"  readonly value="0">
+              </td>
+              <td>
+                  <i class="fa fa-ban" aria-hidden="true"></i>
+                  <input type="text" class="form-control param total" id="aver_diam" placeholder="0"  readonly value="0">
+              </td>
+          </tr>
+      </table>
+  </div> <!--.melcodrev-total-->
+
+
+
+  <!--НАЧАЛО КЛАВИАТУРЫ-->
+  <div class="table-responsive numbers">
+      <table id="numbers" class="table table-bordered">
+          <tr>
+              <td val="1"><b>1</b></td>
+              <td val="2"><b>2</b></td>
+              <td val="3"><b>3</b></td>
+              <td val="4"><b>4</b></td>
+              <td val="5"><b>5</b></td>
+          </tr>
+          <tr>
+              <td val="6"><b>6</b></td>
+              <td val="7"><b>7</b></td>
+              <td val="8"><b>8</b></td>
+              <td val="9"><b>9</b></td>
+              <td val="0"><b>0</b></td>
+          </tr>
+          <tr>
+              <td colspan="2" class="next" val="next" title="вниз"><i class="fa fa-arrow-circle-down"></i></td>
+              <td colspan="2" class="prev" val="prev" title="вверх"><i class="fa fa-arrow-circle-up"></i></td>
+              <td colspan="2" class="del" val="del" title="удалить цифру"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
+          </tr>
+      </table>
+      <footer>
+          2016&nbsp;&copy;&nbsp;<a href="http://radov.xyz/" target="_blank">radov.xyz</a>
+          <i class="fa fa-calculator fa-2x" aria-hidden="true"></i>
+          <a href="#wrapper" class="to-top">
+              <i class="fa fa-caret-up fa-3x" title="вверх"></i>
+          </a>
+      </footer>
+
+  </div><!-- .table-responsive -->
+  <!--КОНЕЦ КЛАВИАТУРЫ-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/drova.js"></script>
+  <!-- AngularJS -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+
+    </script>
+  </body>
+</html>
